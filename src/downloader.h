@@ -10,7 +10,7 @@ public:
     Downloader();
     ~Downloader();
 
-    void StartDownloading(const std::string& videoID);
+    bool StartDownloading(const std::string &videoID);
 
 private:
     CURL *m_curl;
